@@ -158,7 +158,7 @@
                     break;
                 }
                 case 'delete': {
-                    confirm("Delete Order", "Are you sure that you'd like to delete this order?", "Yes", "No").then(function (result) {
+                    confirm("Delete Order", "Are you sure that you'd like to remove this order?", "Yes", "No").then(function (result) {
                         if (result.reason == "primary") {
                             var idx = Data.orders.indexOf(that.currentItem) - 1;
                             if (idx < 0) {
